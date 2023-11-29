@@ -1,0 +1,53 @@
+#name of the object:
+name = HAUMEA
+
+#surface grid type: (H4, H5, H6, cartesian or polyhedron)
+healpixmod = polyhedron
+
+#polyhedron grid file (.obj):
+polyhedron source = sphere_with_hill.obj
+
+#distance from Sun [AU]:
+r_helio = 50.7
+
+#distance from Eart [AU]:
+r_geo = 50.0
+
+#bolometric albedo
+A_bol = 0.1
+
+#beaming parameter:
+eta = 1.0
+
+#
+pV = 0.51
+
+#
+hv = 0.0
+
+#
+q_phase = 0.5
+
+#
+eps = 0.9
+
+#size of the major axis:			  
+scale = 1008
+
+#semi axes 1 >= a > b > c >= 0:
+a = 1
+b = 1
+c = 1
+
+#polar coordinates of the Sun and the Earth [deg]:
+theta_sun = 130.0 
+phi_sun = 235.0
+theta_obs = 180.0
+phi_obs = 215.0
+
+#spectral emissivity function:
+#number of points in the interpolation:
+nn_wvl = 81
+#wavelengths and the corresponding emissivity values:
+eps_spec_wvls0 = 1.0, 24.0, 70.0, 100.0, 160.0, 250.0, 350.0, 500.0, 1500.0
+eps_spec_vals = 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9
