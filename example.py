@@ -10,6 +10,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 haumea = neatm("parameters.dat")
+haumea.help()
 haumea.create_grid()
 haumea.calculate_T()
 haumea.project_to_focal_grid(49)
