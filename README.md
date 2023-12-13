@@ -14,3 +14,5 @@ the code needs several import files to work properly:
   - The module prints a brief log after each step in the calculation. It warnes the user if they
     skip a step in calculation, and the "<object_name>.help()" command lists all the commands in
     the prompt and a short summary of their usage.
+  - I also added a small script ("txtTOobj.py") with the help of which, one can convert a .txt file
+    downloaded from the DAMIT database to an obj file which can be passed to the pyneatm module.
