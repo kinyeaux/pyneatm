@@ -5,9 +5,16 @@ Lines = f.readlines()
 numofrows = Lines[0].split()
 
 for i in range(int(numofrows[0])):
-	print(("v "+Lines[i+1]).replace("    ", " "))
+	s = "v "+Lines[i+1]
+	while "  " in s:
+		s = s.replace("  ", " ")
+	print(s)
 
 for i in range(int(numofrows[1])):
-	print(("f "+Lines[i+int(numofrows[0])+1]).replace("    ", " "))
-
+	s = "f "+Lines[i+int(numofrows[0])+1]
+	while "  " in s:
+		s = s.replace("  ", " ")
+	print(s)
+	
 f.close()
+
